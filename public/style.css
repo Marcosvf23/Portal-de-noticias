@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title-destaque-descricao a {
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -20,11 +25,17 @@ header {
 }
 
 .logo {
+  text-align: left;
   width: 50%;
 }
 
 .logo h2 {
   color: white;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
 }
 
 .form-busca {
@@ -127,6 +138,7 @@ section.outras-noticias {
   padding: 30px 20px;
   text-align: center;
 }
+
 section.outras-noticias h2 {
   font-size: 54px;
 }
@@ -135,6 +147,7 @@ section.outras-noticias h2 {
   width: 60%;
   padding: 0 10px;
   display: flex;
+  height: 100%;
   flex-wrap: wrap;
 }
 
@@ -144,9 +157,8 @@ section.outras-noticias h2 {
   margin-right: 2%;
   background-color: white;
   padding-bottom: 20px;
-
   height: 100%;
-  border: radius 10px;
+  border-radius: 10px;
 }
 
 .box-ultima-single img {
@@ -182,7 +194,7 @@ section.outras-noticias h2 {
   border-radius: 10px;
   line-height: 56px;
   text-align: center;
-  font-size: 15px;
+  font-size: 19px;
 }
 
 .conteudo-noticia-single {
@@ -217,7 +229,7 @@ section.outras-noticias h2 {
 
 .mais-lida-noticia-single .texto-mais-lida-single {
   width: 70%;
-  padding: 8 20px;
+  padding: 8px 20px;
 }
 
 .texto-mais-lida-single h4 {
@@ -230,6 +242,20 @@ section.outras-noticias h2 {
   font-size: 14px;
 }
 
+.texto-mais-lida-single a {
+  margin-top: 10px;
+  display: block;
+  width: 121px;
+  height: 36px;
+  border: 1px solid #ebebeb;
+  text-decoration: none;
+  color: #0aacdc;
+  border-radius: 10px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+}
+
 footer {
   background-color: #0aacdc;
   text-align: center;
@@ -237,7 +263,53 @@ footer {
   padding: 8px 0;
 }
 
-@media screen and(max-width:768px) {
+section.noticia {
+  padding: 20px 0;
+  background-color: #eaeaea;
+}
+
+.noticia-single {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 58%;
+  margin-right: 2%;
+}
+
+.noticia-single h2 {
+  color: #303336;
+  font-size: 42px;
+  margin: 10px 0;
+}
+.noticia-single span {
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #858585;
+  font-weight: bold;
+}
+
+.noticia-single p {
+  color: #7b8591;
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+.noticia-single h3 {
+  color: #7b8591;
+  font-size: 33px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .noticia-single {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .logo {
+    text-align: center;
+  }
   .logo,
   .form-busca {
     width: 100%;
@@ -246,8 +318,9 @@ footer {
     text-align: center;
     margin-top: 10px;
   }
+
   .title-destaque-descricao h2 {
-    font: size 34px;
+    font-size: 34px;
     margin: 20px 0;
   }
 
@@ -256,6 +329,7 @@ footer {
     width: 100%;
     margin-bottom: 20px;
   }
+
   .box-ultima-single {
     width: 100%;
     margin-right: 0;
